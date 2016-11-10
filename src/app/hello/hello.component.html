@@ -1,0 +1,134 @@
+<main class="ph3 ph5-ns mv6">
+
+  <header class="mb6">
+    <h1 class="mb3 mt0 lh-title black-80">
+      How Do I Components With Angular 2?
+    </h1>
+    <p class="f6 ttu tracked gray mb0">¯\_(ツ)_/¯</p>
+  </header>
+
+  <section class="black-60">
+    <h2 class="f6 fw6 ttu tracked pb2">Button</h2>
+
+    <div class="mb3">
+      <button rioButton>Button Text</button>
+      <a rioButton>Button Text</a>
+      <input rioButton type="submit" value="Button Text">
+    </div>
+
+    <div class="mb6">
+      <button rioButton
+        color="dark-gray"
+        bgColor="bg-black-20">
+        Button Text
+      </button>
+
+      <a rioButton
+        color="dark-gray"
+        bgColor="bg-black-20">
+        Button Text
+      </a>
+
+      <input rioButton
+        type="submit"
+        value="Button Text"
+        color="dark-gray"
+        bgColor="bg-black-20">
+    </div>
+
+    <h2 class="f6 fw6 ttu tracked pb2">Button Outline</h2>
+
+    <div class="mb6">
+      <div>
+        <button rioButtonOutline>Button Text</button>
+        <a rioButtonOutline>Button Text</a>
+        <input rioButtonOutline type="submit" value="Button Text">
+      </div>
+
+      <div>
+        <button rioButtonOutline rounded="left">Rounded Left</button>
+        <button rioButtonOutline rounded="none">Rounded None</button>
+        <button rioButtonOutline rounded="right">Rounded Right</button>
+      </div>
+    </div>
+
+    <h2 class="f6 fw6 ttu tracked pb2">Media Object</h2>
+
+    <div class="mb3">
+      <rio-media class="mb3"
+        img="http://placehold.it/128/357EDD/fff">
+      </rio-media>
+
+      <rio-media img="http://placehold.it/128/357EDD/fff"
+        class="mb3">
+        <h3>Media Object</h3>
+        <p>With alignment options</p>
+      </rio-media>
+
+      <rio-media img="http://placehold.it/128/357EDD/fff"
+        right="true"
+        align="bottom"
+        class="mb6 pl2"
+        [ngClass]="'bg-black-10'">
+        <h3>Media Object</h3>
+        <p class="mb0">With alignment options</p>
+      </rio-media>
+    </div>
+
+    <h2 class="f6 fw6 ttu tracked pb2">Card</h2>
+
+    <div class="mb6">
+      <rio-card class="mb3 mw5 dark-gray mr3">
+        <rio-card-image src="http://placehold.it/320/ccc/444"></rio-card-image>
+        <h3 rioHeading>Card</h3>
+        <p class="mb0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </rio-card>
+
+      <a href="#">
+        <rio-card class="mb3 mw5 dark-gray dim">
+          <rio-card-image src="http://placehold.it/320/ccc/444"></rio-card-image>
+          <h3 rioHeading>Link Card</h3>
+          <p class="mb0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </rio-card>
+      </a>
+    </div>
+
+    <h2 class="f6 fw6 ttu tracked pb2">Heading</h2>
+
+    <div class="mb6">
+      <h1 rioHeading>Heading 1</h1>
+      <h2 rioHeading>Heading 2</h2>
+      <h3 rioHeading>Heading 3</h3>
+      <h4 rioHeading>Heading 4</h4>
+      <h5 rioHeading>Heading 5</h5>
+      <h6 rioHeading>Heading 6</h6>
+      <h2 class="purple lh-copy" rioHeading>Customized Heading</h2>
+    </div>
+
+    <h2 class="f6 fw6 ttu tracked pb2">Toolbar</h2>
+    <p>See another example of a fixed toolbar at the top of the page.</p>
+
+    <rio-toolbar class="fixed top-0 left-0 right-0">
+      <img src="http://placehold.it/200/fff/357EDD?text=LOGO"
+        class="w2 h2 br-100 pa2"
+        alt="Site Name" />
+
+      <a href="#" rioNavItem>Link 1</a>
+      <a href="#" rioNavItem>Link 2</a>
+      <a href="#" rioNavItem>Link 3</a>
+    </rio-toolbar>
+
+    <rio-toolbar>
+      <svg viewBox="0 0 20 20" class="h2 pa2">
+				<path
+          d="M2.568,7.179H8.96c1.411,0,2.557-1.145,2.557-2.557c0-1.412-1.146-2.557-2.557-2.557H8.534c-0.235,0-0.426,0.19-0.426,0.426c0,0.236,0.191,0.426,0.426,0.426H8.96c0.941,0,1.704,0.763,1.704,1.705S9.901,6.327,8.96,6.327H2.568c-0.236,0-0.426,0.19-0.426,0.426C2.142,6.988,2.333,7.179,2.568,7.179 M15.778,7.179c0-0.941-0.763-1.704-1.704-1.704h-0.427c-0.235,0-0.426,0.19-0.426,0.426c0,0.235,0.19,0.426,0.426,0.426h0.427c0.47,0,0.852,0.382,0.852,0.852c0,0.471-0.382,0.853-0.852,0.853H0.864c-0.236,0-0.426,0.19-0.426,0.426c0,0.235,0.19,0.426,0.426,0.426h13.21C15.016,8.884,15.778,8.12,15.778,7.179 M16.631,9.736H2.568c-0.236,0-0.426,0.19-0.426,0.426c0,0.236,0.19,0.426,0.426,0.426h14.062c0.94,0,1.704,0.764,1.704,1.705s-0.764,1.704-1.704,1.704h-0.427c-0.235,0-0.426,0.19-0.426,0.427c0,0.235,0.19,0.426,0.426,0.426h0.427c1.411,0,2.557-1.145,2.557-2.557S18.042,9.736,16.631,9.736 M10.665,11.44H4.273c-0.236,0-0.426,0.19-0.426,0.426c0,0.236,0.19,0.427,0.426,0.427h6.392c1.412,0,2.557,1.145,2.557,2.557s-1.146,2.557-2.557,2.557h-0.426c-0.236,0-0.426,0.19-0.426,0.426s0.19,0.427,0.426,0.427h0.426c1.883,0,3.41-1.526,3.41-3.409S12.548,11.44,10.665,11.44" />
+			</svg>
+
+      <a href="#" rioNavItem>Link 1</a>
+      <a href="#" rioNavItem>Link 2</a>
+      <a href="#" rioNavItem>Link 3</a>
+    </rio-toolbar>
+
+  </section>
+
+</main>
