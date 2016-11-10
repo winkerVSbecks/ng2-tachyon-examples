@@ -105,6 +105,7 @@
     "style-loader": "^0.13.1",
     "stylelint": "^7.5.0",
     "stylelint-webpack-plugin": "^0.4.0",
+    "svg-sprite-loader": "0.0.31",
     "to-string-loader": "^1.1.5",
     "ts-helpers": "^1.1.2",
     "tslint": "^3.15.1",

@@ -11,6 +11,7 @@ import { HeadingDirective } from './directives/heading.directive';
 import { ToolbarComponent } from './components/toolbar.component';
 import { NavItemDirective } from './directives/nav-item.directive';
 import { ButtonOutlineDirective } from './directives/button-outline.directive';
+import { IconComponent } from './components/icon/icon.component';
 
 @NgModule({
   imports: [
@@ -25,6 +26,7 @@ import { ButtonOutlineDirective } from './directives/button-outline.directive';
     ToolbarComponent,
     NavItemDirective,
     ButtonOutlineDirective,
+    IconComponent,
   ],
   exports: [
     CommonModule,
@@ -36,6 +38,7 @@ import { ButtonOutlineDirective } from './directives/button-outline.directive';
     ToolbarComponent,
     NavItemDirective,
     ButtonOutlineDirective,
+    IconComponent,
   ],
 })
 export class SharedModule {}
