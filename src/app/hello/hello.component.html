@@ -1,4 +1,4 @@
-<main class="ph3 ph5-ns mv6">
+<main class="ph3 mv6 mw8 center">
 
   <header class="mb6">
     <h1 class="mb3 mt0 lh-title black-80">
@@ -105,29 +105,6 @@
       <h2 class="purple lh-copy" rioHeading>Customized Heading</h2>
     </div>
 
-    <h2 class="f6 fw6 ttu tracked">Toolbar</h2>
-    <p>See another example of a fixed toolbar at the top of the page.</p>
-
-    <rio-toolbar class="fixed top-0 left-0 right-0">
-      <img src="http://placehold.it/200/fff/357EDD?text=LOGO"
-        class="w2 h2 br-100 pa2"
-        alt="Site Name" />
-
-      <a href="#" rioNavItem>Link 1</a>
-      <a href="#" rioNavItem>Link 2</a>
-      <a href="#" rioNavItem>Link 3</a>
-    </rio-toolbar>
-
-    <div class="mb6">
-      <rio-toolbar>
-        <rio-icon class="f2 pa2" type="wind"></rio-icon>
-
-        <a href="#" rioNavItem>Link 1</a>
-        <a href="#" rioNavItem>Link 2</a>
-        <a href="#" rioNavItem>Link 3</a>
-      </rio-toolbar>
-    </div>
-
     <h2 class="f6 fw6 ttu tracked">Icons</h2>
 
     <p class="f1 flex flex-wrap justify-between mb6">
@@ -139,6 +116,47 @@
       <rio-icon class="blue" type="star"></rio-icon>
       <rio-icon class="red" type="wind"></rio-icon>
     </p>
+
+    <h2 class="f6 fw6 ttu tracked">Toolbar</h2>
+    <p>See another example of a fixed toolbar at the top of the page.</p>
+
+    <rio-toolbar class="fixed top-0 left-0 right-0">
+      <rio-icon class="f2 pa2" type="wind"></rio-icon>
+      <a href="#" rioNavItem>Link 1</a>
+      <a href="#" rioNavItem>Link 2</a>
+      <a href="#" rioNavItem>Link 3</a>
+    </rio-toolbar>
+
+    <div class="mb6">
+      <rio-toolbar>
+        <img src="http://placehold.it/200/fff/357EDD?text=LOGO"
+          class="w2 h2 br-100 pa2"
+          alt="Site Name" />
+        <a href="#" rioNavItem>Link 1</a>
+        <a href="#" rioNavItem>Link 2</a>
+        <a href="#" rioNavItem>Link 3</a>
+      </rio-toolbar>
+    </div>
+
+    <h2 class="f6 fw6 ttu tracked">List</h2>
+
+    <rio-list class="mb6 mt4">
+      <rio-list-item>
+        <rio-icon rioListAvatar type="chat"></rio-icon>
+        <h4 rioHeading class="mb1">Photos</h4>
+        <p class="ma0 light-silver">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </rio-list-item>
+      <rio-list-item>
+        <rio-icon rioListAvatar type="mail"></rio-icon>
+        <h4 rioHeading class="mb1">Recipes</h4>
+        <p class="ma0 light-silver">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </rio-list-item>
+      <rio-list-item>
+        <rio-icon rioListAvatar type="marker"></rio-icon>
+        <h4 rioHeading class="mb1">Work</h4>
+        <p class="ma0 light-silver">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </rio-list-item>
+    </rio-list>
   </section>
 
 </main>

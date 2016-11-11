@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
       <ng-content></ng-content>
     </nav>
   `,
-  styles: [`
-    :host /deep/ svg { fill: currentColor; }
-  `],
+  /* tslint:disable:use-host-property-decorator */
+  host: { class: 'db' },
+  /* tslint:enable */
 })
 export class ToolbarComponent {}
