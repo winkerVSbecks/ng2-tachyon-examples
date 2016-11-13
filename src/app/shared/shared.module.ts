@@ -15,6 +15,8 @@ import { IconComponent } from './components/icon/icon.component';
 import { ListComponent } from './components/list/list.component';
 import { ListItemComponent } from './components/list/list-item.component';
 import { ListAvatarDirective } from './directives/list-avatar.directive';
+import { CheckboxComponent } from './components/checkbox.component';
+import { LabelDirective } from './directives/label.component';
 
 @NgModule({
   imports: [
@@ -33,6 +35,8 @@ import { ListAvatarDirective } from './directives/list-avatar.directive';
     ListComponent,
     ListItemComponent,
     ListAvatarDirective,
+    CheckboxComponent,
+    LabelDirective,
   ],
   exports: [
     CommonModule,
@@ -48,6 +52,8 @@ import { ListAvatarDirective } from './directives/list-avatar.directive';
     ListComponent,
     ListItemComponent,
     ListAvatarDirective,
+    CheckboxComponent,
+    LabelDirective,
   ],
 })
 export class SharedModule {}

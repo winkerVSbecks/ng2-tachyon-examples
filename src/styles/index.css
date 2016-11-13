@@ -9,3 +9,10 @@
   border-bottom-right-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
+
+button:disabled,
+a:disabled,
+input[type=submit]:disabled {
+  cursor: not-allowed;
+  opacity: 0.25;
+}

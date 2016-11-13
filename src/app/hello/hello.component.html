@@ -115,6 +115,8 @@
       <rio-icon class="green" type="marker"></rio-icon>
       <rio-icon class="blue" type="star"></rio-icon>
       <rio-icon class="red" type="wind"></rio-icon>
+      <rio-icon class="gray" type="box"></rio-icon>
+      <rio-icon class="green" type="checkbox"></rio-icon>
     </p>
 
     <h2 class="f6 fw6 ttu tracked">Toolbar</h2>
@@ -157,6 +159,35 @@
         <p class="ma0 light-silver">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </rio-list-item>
     </rio-list>
+
+    <h2 class="f6 fw6 ttu tracked">Checkbox</h2>
+
+    <form class="mt4 mb6"
+      #checkboxForm="ngForm"
+      (ngSubmit)=submitCheckboxForm(checkboxForm)
+      novalidate>
+
+      <label rioLabel>
+        <rio-checkbox name="checkbox1"
+          [(ngModel)]="checkboxFormModel.checkbox1"
+          required>
+        </rio-checkbox>
+        Checkbox 1
+      </label>
+
+      <label rioLabel>
+        <rio-checkbox name="checkbox2"
+          [(ngModel)]="checkboxFormModel.checkbox2">
+        </rio-checkbox>
+        Checkbox 2
+      </label>
+
+    <input rioButton
+      type="submit"
+      value="Submit"
+      [disabled]="!checkboxForm.valid">
+
+  </form>
   </section>
 
 </main>
